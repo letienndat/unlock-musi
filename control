@@ -1,0 +1,9 @@
+Package: com.letiendat.disableadsmusi
+Name: DisableAdsMusi
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Unlock In-App Purchase + Remove ads Musi app.
+Maintainer: Le Tien Dat
+Author: Le Tien Dat
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
