@@ -1,6 +1,6 @@
 #import "Headers/MusiClasses.h"
 
-%group greaterThenOrEqualToIOS17
+%group fixBackupCodeCache
 
 %hook MBackupCodeCacheController
 
@@ -12,7 +12,7 @@
 %end
 
 %ctor {
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 17.0) {
-        %init(greaterThenOrEqualToIOS17);
+    if ([UIDevice currentDevice].systemVersion.floatValue != 16.2f) {
+        %init(fixBackupCodeCache);
     }
 }
